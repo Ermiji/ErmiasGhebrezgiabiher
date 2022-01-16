@@ -1,0 +1,36 @@
+body{
+  margin: 0px;
+  padding:0px;
+  background-color: pink;
+}
+h1{
+  color: black;
+  text-align: center;
+  padding: 30px 5px;
+}
+label{
+  padding: 5px;
+  display: inline-block;
+  font-size: 18px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight:bold;
+}
+.inp{
+
+  width:300px;
+  height:30px;
+}
+#form{
+  background-color:whitesmoke;
+  height: 580px;
+  padding: 40px 20px;
+  margin: 50px 450px;
+
+}
+
+#submit{
+  padding: 10px 20px;
+  background-color:green;
+  color: white;
+  border-radius: 10px;
+}

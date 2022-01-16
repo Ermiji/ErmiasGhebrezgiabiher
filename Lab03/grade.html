@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="grade.css">
+
+  <title>Retrieve Grade</title>
+
+</head>
+
+<body>
+  <div id="header"><h1>Retrieve Your Grade</h1></div>
+  
+<div id= "form">
+  <form action= "http://mumstudents.org/params.php" autocomplete="on" method="get">
+    <label for= "nm">Name: </label>
+    <input type= "text" class="input" name= "nm" placeholder="Enter your name"> <br><br>
+    <label for= "id">Student ID: </label>
+    <input type="text" class="input" name="id" placeholder="Enter your ID"> <br><br>
+
+    <label for= "crss" >Course: </label>
+    <select id="crss" name="crses">
+      <option value="CS390">FPP</option>
+      <option value="CS401">MPP</option>
+      <option value="CS435">Algo</option>
+      <option value="CS422">DBMS</option>
+    </select>
+    <br><br>
+
+    <label>Students Entry: </label> <br>
+
+    <input type="radio" id="au" name="en" value= "Aug-2021"> 
+    <label for= "au">August 2021: </label><br>
+    <input type="radio" id="ma" name="en" value= "May-2021"> 
+    <label for= "ma">May 2021: </label><br>
+    <input type="radio" id="fe" name="en" value= "Feb-2021"> 
+    <label for= "fe">Feb 2021: </label> <br><br>
+   
+
+    <label>Choose transport methods only:</label> <br>
+    <input type="checkbox" id="car" name="transport" value="Car">
+  <label for="car">Car</label><br>
+  <input type="checkbox" id="train" name="transport" value="Train">
+  <label for="train">Train</label><br>
+  <input type="checkbox" id="basketball" name="transport" value="BasketBall">
+  <label for="basketball">BasketBall</label><br><br>
+
+    <input type= "submit" id= "submit" value="get grade"> 
+
+  </form>
+
+</div> 
+</body>
+
+</html>
