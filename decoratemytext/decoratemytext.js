@@ -17,7 +17,7 @@ function verifyMsg(){
         document.getElementById("ta").style.fontWeight = "bold";
         document.getElementById("ta").style.color = "green";
         document.getElementById("ta").style.textDecoration = "underline";
-        document.body.style.backgroundImage = "url('http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg')";
+        document.body.style.backgroundImage = "url(http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg)";
     }else{
         document.getElementById("ta").style.fontWeight = "normal";
         document.getElementById("ta").style.color = "black";
