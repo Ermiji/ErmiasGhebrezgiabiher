@@ -27,14 +27,14 @@ $(document).ready(function () {
         filledSquares.toppx = toppx;
         arr.push(filledSquares);
       
-        $(this).css({"left": leftpx, "top": toppx, "backgroundImage": "url('images/background.jpg')", "backgroundPosition": -x + 'px ' + (-y) + 'px'});
+        $(this).css({"left": leftpx, "top": toppx, "backgroundImage": "url('images/background.png')", "backgroundPosition": -x + 'px ' + (-y) + 'px'});
         count++;
     });
 
-    var images= ["url('images/background.jpg')", "url('images/background2.jpeg')", "url('images/background3.jpg')"];
+    var images= ["url('images/background.png')"];
     var index=0;
     $("#changeImage").click(function(){
-      if(index>2){index=0;};
+      if(index>3){index=0;};
       $(".puzzlepiece").css({"background-image":images[index++]})
     })
 
