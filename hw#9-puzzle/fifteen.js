@@ -34,7 +34,7 @@ $(document).ready(function () {
     var images= ["url('images/background.png')"];
     var index=0;
     $("#changeImage").click(function(){
-      if(index>3){index=0;};
+      if(index>1){index=0;};
       $(".puzzlepiece").css({"background-image":images[index++]})
     })
 
