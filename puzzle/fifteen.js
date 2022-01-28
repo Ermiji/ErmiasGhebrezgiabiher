@@ -6,14 +6,14 @@
 "use strict";
 $(document).ready(function () {
 
-    var count = 0;//count variable for left and right positioning
-    var arr = []; //array used for storing the filled position for shuffling
-    var EMPTY_SQUARE = {};//Object which stores and updates the empty div let and top
-    EMPTY_SQUARE.leftx = "300px";//initial left and top positions respectively
+    var count = 0;
+    var arr = []; 
+    var EMPTY_SQUARE = {};
+    EMPTY_SQUARE.leftx = "300px";
     EMPTY_SQUARE.toppx = "300px";
 
 
-//function for setting the position and css for the filled squares
+//function for setting the position and css
     $('#puzzlearea div').each(function ()
     {
         
@@ -59,10 +59,9 @@ $(document).ready(function () {
 
     });
 
-//shuffle algorithm, this changes the index of the divs stored as objects in the array
+//shuffle algorithm, this changes the index of the divs 
     $('#shufflebutton').click(function () {
 
-//        console.log(arr); //for debugging purpose
         var i = 0, j = 0,suff=0, temp = null;
 
         for (i = arr.length - 1; i > 0; i -= 1) {
@@ -71,7 +70,6 @@ $(document).ready(function () {
             arr[i] = arr[j];
             arr[j] = temp;
         }
-        //        console.log(arr); //for debugging purpose
 
         //setting the css from the shuffled array
         $('#puzzlearea div').each(function ()
@@ -88,10 +86,9 @@ $(document).ready(function () {
     //on hover function for changing the css and removing the css
     $('.puzzlepiece').hover(function ()
     {
-//        console.log(EMPTY_SQUARE);
+
         var changedleft = $(this).css("left");
         var changedtop = $(this).css("top");
-//        console.log("left: " + changedleft + " changedtop: " + changedtop);
 
         if (clickableleft(changedleft, changedtop))
         {
@@ -127,7 +124,7 @@ $(document).ready(function () {
     {
         if (parseInt(changedleft) === parseInt(EMPTY_SQUARE.leftx))
         {
-            //a simplelogic for checking the element neighbours an empty div
+            //a simplelogic for checking the element 
             if (parseInt(changedtop) + 100 === parseInt(EMPTY_SQUARE.toppx) || parseInt(changedtop) - 100 === parseInt(EMPTY_SQUARE.toppx))
             {
 
