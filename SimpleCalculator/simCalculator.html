@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Calculator</title>
+  <title>A Simple Calculator</title>
   <style>
     body{
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -13,18 +13,18 @@
       margin: 0;
     }
     #header {
-      background-color: black;
+      background-color: rgb(0, 0, 0);
       color: white;
       font-size: 30px;
       text-align: center;
-      padding: 20px;
+      padding: 100px;
 
     }
     form{
       padding: 30px;
     }
     input, select{
-      padding: 8px;
+      padding: 10px;
       margin-top: 20px;
     }
     input[type='submit']{
@@ -41,7 +41,7 @@
 <body>
 
   <div id= 'header'>
-    Simple Calculator
+    A Simple Calculator
   </div>
 
   <form action="http://localhost:8000/simCalculator">
@@ -51,10 +51,10 @@
       <input type="text" name="num2" placeholder="Enter second number"/><br />
       <label>Select operation: </label> 
       <select name="mOperation" id="mOperation">
-        <option value="addition">Add</option>
-        <option value="subtraction">Subtract</option>
-        <option value="multiplication">Multiply</option>
-        <option value="devision">Devide</option>
+        <option value="addition">Addition</option>
+        <option value="subtraction">Subtraction</option>
+        <option value="multiplication">Multiplication</option>
+        <option value="devision">Devision</option>
       </select>
      <br><br>
 
