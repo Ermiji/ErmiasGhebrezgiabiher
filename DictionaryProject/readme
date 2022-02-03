@@ -1,4 +1,4 @@
-Here how it works
+Steps of how the dictionary project works....
 
 The main webpage (User Interface) has a text field for the User to enter a word and a Lookup Button to
 request the definition of the word. When the User clicks the Lookup Button, a JavaScript event handler
